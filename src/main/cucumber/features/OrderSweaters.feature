@@ -8,13 +8,14 @@ Feature: Order Sweaters
     And click on Hummingbird Printed Sweater
     And check discount
     And select size: M
-    And select items number 3
+    And select items number 5
     And add to cart
     And click proceed button
     And proceed Cart
     And select Shipping Method
     And select payment Method
     Then take Screenshot
+
 #    And Open user tab
 #    And click order history
 

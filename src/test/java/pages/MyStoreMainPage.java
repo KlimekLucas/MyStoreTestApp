@@ -16,7 +16,6 @@ public class MyStoreMainPage {
     @FindBy(name = "s")
     private WebElement searchField;
 
-
     public MyStoreMainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }

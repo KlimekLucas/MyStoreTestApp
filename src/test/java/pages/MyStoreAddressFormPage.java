@@ -38,7 +38,6 @@ public class MyStoreAddressFormPage {
         setInput(phone, formData.getPhone());
     }
 
-
     private void setInput(WebElement input, String value) {
         input.click();
         input.clear();

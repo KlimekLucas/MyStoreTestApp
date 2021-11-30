@@ -11,9 +11,6 @@ public class MyStoreProductPage {
         PageFactory.initElements(driver, this);
     }
 
-//    @FindBy(id = "group_1")
-//    private Select changeSize;
-
     @FindBy(className = "discount-percentage")
     private WebElement discount;
 
@@ -29,7 +26,6 @@ public class MyStoreProductPage {
     @FindBy(css = ".cart-content-btn > .btn-primary")
     private WebElement procedButton;
 
-
     public void setChangeSizeto(String size) {
         changeSize.sendKeys(size);
     }
@@ -44,8 +40,8 @@ public class MyStoreProductPage {
         addToCartButton.click();
     }
 
-    public boolean checkDiscount(){
-       return discount.getText().contains("20%");
+    public boolean checkDiscount() {
+        return discount.getText().contains("20%");
     }
 
     public void proceed() {

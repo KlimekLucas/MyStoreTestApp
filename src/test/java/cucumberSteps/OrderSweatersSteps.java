@@ -71,12 +71,10 @@ public class OrderSweatersSteps {
         myStoreSearchResult.selectHummingbirdShirt();
     }
 
-
     @And("add to cart")
     public void addToCart() {
         myStoreProductPage.addToCart();
     }
-
 
     @And("click proceed button")
     public void clickProceedButton() {
@@ -92,7 +90,6 @@ public class OrderSweatersSteps {
     public void selectShippingMethod() {
         myStorePersonalInfoPage.selectShippingMethod();
         myStorePersonalInfoPage.selectPickUpInStore();
-
     }
 
     @And("select payment Method")
@@ -137,8 +134,7 @@ public class OrderSweatersSteps {
         myStoreYourAccountPage.clickOrdersHistory();
     }
 
-    private void saveSum(){
+    private void saveSum() {
         orderSummary = myStoreOrderSummaryPage.returnSummary();
-        System.out.println(orderSummary);
     }
 }

@@ -104,15 +104,14 @@ public class logInUserSteps {
 
     @And("confirm valid data")
     public void confirmValidData() {
-       String addressTable[] =  myStoreConfirmAddressPage.getAddressInfo();
+       String[] addressTable =  myStoreConfirmAddressPage.getAddressInfo();
         String alias = addressTable[0];
         String address = addressTable[2];
         String city = addressTable[3];
         String postalCode = addressTable[4];
         String country = addressTable[5];
         String phone = addressTable[6];
-       String removeSpacesFromCountry = country.replaceAll("\\s+","");
-
+        String removeSpacesFromCountry = country.replaceAll("\\s+","");
 
         assertTrue(myStoreConfirmAddressPage.confirmData(alias,this.alias));
         assertTrue(myStoreConfirmAddressPage.confirmData(address,this.address));

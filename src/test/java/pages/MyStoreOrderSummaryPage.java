@@ -14,7 +14,7 @@ public class MyStoreOrderSummaryPage {
         PageFactory.initElements(driver, this);
     }
 
-    public String returnSummary(){
+    public String returnSummary() {
         return summary.getText();
     }
 }

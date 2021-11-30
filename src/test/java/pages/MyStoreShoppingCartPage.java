@@ -7,14 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MyStoreShoppingCartPage {
 
-
     public MyStoreShoppingCartPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(css = ".text-sm-center > .btn")
     private WebElement proceedButton;
-
 
     public void clickProceedButton() {
         proceedButton.click();

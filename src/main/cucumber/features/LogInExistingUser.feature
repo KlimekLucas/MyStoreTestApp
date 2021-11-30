@@ -6,12 +6,12 @@ Feature: Log in to Existing User
     And Click My Address
     And Fill valid user info: <alias>, <address>, <city>, <postalCode>, <country>, <phone>
     And confirm valid data
+
 #    And delete address
 #    Then confirm success
 
 
-
     Examples:
-      | alias    | address     | city   | postalCode | country       | phone     |
-      | Sherlock | BakerStreet | London | E16AN      | UnitedKingdom | 666666666 |
-#      | watson   | BakerStreet | London | E16AN      | United Kingdom | 666666667 |
+      | alias    | address     | city   | postalCode | country        | phone     |
+      | Sherlock | BakerStreet | London | E16AN      | UnitedKingdom  | 666666666 |
+#     | watson   | BakerStreet | London | E16AN      | United Kingdom | 666666667 |

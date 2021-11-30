@@ -10,9 +10,8 @@ public class MyStoreYourAccountPage {
     @FindBy(id = "address-link")
     WebElement myAddressButton;
 
-    @FindBy (id = "history-link")
+    @FindBy(id = "history-link")
     WebElement ordersHistory;
-
 
     public MyStoreYourAccountPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -28,7 +27,7 @@ public class MyStoreYourAccountPage {
         input.sendKeys(value);
     }
 
-    public void clickOrdersHistory(){
+    public void clickOrdersHistory() {
         ordersHistory.click();
     }
 }
