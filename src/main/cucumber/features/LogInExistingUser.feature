@@ -1,4 +1,5 @@
 Feature: Log in to Existing User
+
   Scenario Outline: LoginUser
     Given Open webpage: https://mystore-testlab.coderslab.pl
     When click SignIn button
@@ -6,7 +7,6 @@ Feature: Log in to Existing User
     And Click My Address
     And Fill valid user info: <alias>, <address>, <city>, <postalCode>, <country>, <phone>
     And confirm valid data
-
 #    And delete address
 #    Then confirm success
 
